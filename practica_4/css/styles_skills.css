@@ -1,0 +1,97 @@
+.skill_display {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 150px;
+}
+
+.subtitle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 35px;
+    font-family: "Poppins";
+    border-bottom: 1px solid rgba(8,83,156,0.75);   
+    margin-bottom: 75px;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon svg {
+    padding: 25px;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2), 0px 0px 25px rgba(0,0,0,0.2);;
+}
+
+#debugging {
+    background: linear-gradient(
+        to right,
+        #b5e48c,
+        #b5e48c
+    );
+}
+
+#scripting {
+    background: linear-gradient(
+        to right,
+        #ee6c4d,
+        #ee6c4d
+    );
+}
+
+#admin {
+    background: linear-gradient(
+        to right,
+        #003566,
+        #003566
+    );
+}
+
+#developing {
+    background: linear-gradient(
+        to right,
+        #f9c74f,
+        #f9c74f
+    );
+}
+
+#web_developing {
+    background: linear-gradient(
+        to right,
+        #ef476f,
+        #ef476f
+    );
+}
+
+#web_administration {
+    background: linear-gradient(
+        to right,
+        #4cc9f0,
+        #4cc9f0
+    );
+}
+
+.skill h3,
+.skill p {
+    text-align: center;
+    margin: 10px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2), 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.skill p {
+    color: #585858;
+    text-shadow: 1px 1px #90FAF5;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+

@@ -1,0 +1,97 @@
+.icon-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 2em;
+  border-radius: 4px;
+}
+
+.link {
+  position: relative;
+}
+
+.link i {
+  transition: 0.3s ease;
+}
+.link:hover .tooltip {
+  display: block;
+}
+.icon__danger:hover i {
+  fill: #4267B1;
+}
+.icon__src:hover i {
+  fill: #C13584;
+}
+.icon__cow:hover i {
+  fill: #55ACEE;
+}
+
+.tooltip {
+  padding: 10px;
+  position: absolute;
+  width: auto;
+  white-space: nowrap;
+  word-wrap: no-wrap;
+  box-shadow: 1px 1px 20px #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  transform-style: preserve-3d;
+  z-index: 200;
+  font-size: 0.9em;
+  display: none;
+}
+.tooltip:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg) translateX(-50%);
+  background-color: #fff;
+  left: 50%;
+  top: -1px;
+  z-index: 400;
+}
+.tooltip:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg) translateX(-50%) translateZ(-1px);
+  background-color: #fff;
+  left: 50%;
+  top: 0px;
+  z-index: -1;
+  box-shadow: -1px -1px 20px #aaa;
+}
+.tooltip__dang {
+  color: #4267B1;
+  box-shadow: 1px 1px 20px rgba(211, 4, 35, 0.3);
+  top: auto;
+  bottom: -50px;
+}
+.tooltip__src {
+  color: #C13584;
+  box-shadow: 1px 1px 20px rgba(6, 65, 173, 0.3);
+  top: -50px;
+}
+.tooltip__src:after {
+  top: auto;
+  bottom: -8px;
+}
+.tooltip__src:before {
+  top: auto;
+  bottom: -8px;
+}
+.tooltip__cow {
+  color: #55ACEE;
+  box-shadow: 1px 1px 20px rgba(188, 108, 98, 0.3);
+  top: auto;
+  bottom: -50px;
+}
